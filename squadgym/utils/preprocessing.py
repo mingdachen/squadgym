@@ -6,7 +6,7 @@ from nltk.corpus import stopwords
 
 
 def pad_sequences(sequences, maxlen=None, dtype='int32',
-                  padding='pre', truncating='pre', value=0.):
+                  padding='post', truncating='post', value=0.):
     lengths = [len(s) for s in sequences]
     nb_samples = len(sequences)
 
